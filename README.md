@@ -12,5 +12,5 @@
 * Funções: 
 Momento em que modularizamos nosso código em blocos.
 
-* Funções Anônimas/ Arrow Functions
-Funções que só será executada uma única vezm quando o gatilho for disparado.
+* Funções Anônimas/ Arrow Functions: 
+Funções que só serão executadas uma única vezquando o gatilho for disparado.
