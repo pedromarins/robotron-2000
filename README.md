@@ -4,7 +4,7 @@
 # JAVASCRIPT: MANIPULANDO O DOM
 
 
-# Neste curso foi apresentado diversas, nele há o uso de e conhecimentos aplicados de: 
+# Neste curso foi apresentado diversas coisas, nele há o uso de e conhecimentos aplicados de: 
 
 * DOM(Document Object Model), permite que o documento HTML seja atualizado dinamicamente, nos permitindo, atualizar, excluir e modificar elementos do documento HTML. 
 
