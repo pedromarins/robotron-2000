@@ -10,7 +10,7 @@
 * querySelector()/querySelectorAll(): Foi explicado também a diferença entre esses métodos, onde querySelector nos ajuda a obter um único elemento do DOM, já seu irmão, o querySelectorAll(), nos ajuda a pegar classes de elementos, vários elementos, de uma vez só. A melhor opção quando se usar Arrays.
 
 * Funções: 
-Momento em que modularizamos nosso código em blocos.
+Momento em que modularizamos nosso código em blocos, algo ótimo para nos ajudar principalmente na reutilização de código .
 
 * Funções Anônimas/ Arrow Functions: 
 Funções que só serão executadas uma única vezquando o gatilho for disparado.
