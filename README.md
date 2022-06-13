@@ -23,3 +23,5 @@ Funções que só serão executadas uma única vezquando o gatilho for disparado
 * parentNod: Essa propriedade nos retorna o pai de determinado elemento.
 
 * Sempre é uma boa ideia e nos ajuda demasiadamente usar navegar pela árvore do HTML para nos localizar
+
+* uso do forEach em arrays para tratar cada um de seus elementos
