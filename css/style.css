@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url(../img/fundo.jpg);
+    background: url(../img/apocalypse.jpg);
     background-position: center center;
     background-size: cover cover;
     padding: 0;
@@ -38,19 +38,19 @@ main {
 }
 
 .robo {
-    height: 110%;
+    height: 115%;
     z-index: 1;
     position: absolute;
-    left: -20%;
+    left: -10%;
     top: -5%;
 }
 
 .titulo {
     transform: rotate(180deg);
     font-weight: 500;
-    font-size: 130px;
+    font-size: 180px;
     position: absolute;
-    bottom: 7rem;
+    bottom: 2rem;
     left: -3rem;
     line-height: 0.8;
     writing-mode: vertical-rl;
@@ -61,7 +61,7 @@ main {
 .box {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
-    border-left: 5px solid var(--main-cinza);
+    border-left: 8px solid var(--main-cinza);
     height: 80%;
 }
 
