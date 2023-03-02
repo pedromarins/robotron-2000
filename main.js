@@ -38,7 +38,7 @@ const estatisticas = document.querySelectorAll("[data-estatistica]");
 console.log(estatisticas)
 
 const calcular = (ctr, contador) => {
-    const tipoPeca = document.querySelector("[data-peca]").dataset.peca;
+    const tipoPeca = ctr.parentNode.parentNode.querySelector("[data-peca]").dataset.peca;
     const operador = ctr.dataset.controle;
     atualizaEstatisticas(tipoPeca, operador)
     return operacao(operador, contador);
@@ -52,6 +52,7 @@ const operacao = (operador, valor, add = 1) => {
 const atualizaEstatisticas = (tipoPeca, operador) => {
     estatisticas.forEach(estatistica => {
         const caracterista = estatistica.dataset.estatistica;
+        console.log(pecas[tipoPeca][caracterista])
         estatistica.textContent = operacao(operador, parseInt(estatistica.textContent), pecas[tipoPeca][caracterista]);
     })
 }
