@@ -38,7 +38,7 @@ const estatisticas = document.querySelectorAll("[data-estatistica]");
 console.log(estatisticas)
 
 const calcular = (ctr, contador) => {
-    const tipoPeca = ctr.parentNode.parentNode.querySelector(".peca-titulo").dataset.peca;
+    const tipoPeca = document.querySelector("[data-peca]").dataset.peca;
     const operador = ctr.dataset.controle;
     atualizaEstatisticas(tipoPeca, operador)
     return operacao(operador, contador);
