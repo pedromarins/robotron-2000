@@ -9,9 +9,8 @@
 }
 
 body {
-    background: url(../img/fundo.jpg);
-    background-position: center center;
-    background-size: cover cover;
+    background: url(../img/fundo1.jpg) no-repeat;
+    background-size: 100%;
     padding: 0;
     margin: 0;
     font-weight: 300;
@@ -48,10 +47,9 @@ main {
 .titulo {
     transform: rotate(180deg);
     font-weight: 500;
-    font-size: 130px;
+    font-size: 70px;
     position: absolute;
     bottom: 7rem;
-    left: -3rem;
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
