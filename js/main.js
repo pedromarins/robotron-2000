@@ -39,7 +39,7 @@ const pecas = {
 controle.forEach(el => {
     el.addEventListener('click', ev => {
         manipularDados(ev.target.dataset.controle, ev.target.parentNode);
-        atualizaEstatisticas(ev.target.dataset.peca);
+        atualizaEstatisticas(ev.target.dataset.peca, ev.dataset.controle);
     });
 });
 
@@ -52,9 +52,13 @@ function manipularDados(operacao, controle){
     }
 }
 
-function atualizaEstatisticas(peca){
+function atualizaEstatisticas(peca, controle){
     estatisticas.forEach(element => {
         let estatistica = element.dataset.estatistica;
-        element.textContent = parseInt(element.textContent) + pecas[peca][estatistica]
+        if(controle == somar){
+            element.textContent = parseInt(element.textContent) + pecas[peca][estatistica]
+        }else{ 
+            element.textContent = parseInt(element.textContent) - pecas[peca][estatistica]
+        }
     });
 }
