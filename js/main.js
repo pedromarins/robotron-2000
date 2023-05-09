@@ -55,7 +55,7 @@ function manipularDados(operacao, controle){
 function atualizaEstatisticas(peca, controle){
     estatisticas.forEach(element => {
         let estatistica = element.dataset.estatistica;
-        if(controle == somar){
+        if(controle == 'somar'){
             element.textContent = parseInt(element.textContent) + pecas[peca][estatistica]
         }else{ 
             element.textContent = parseInt(element.textContent) - pecas[peca][estatistica]
