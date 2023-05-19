@@ -1,5 +1,6 @@
 const controle = document.querySelectorAll("[data-controle]")
 const estatisticas = document.querySelectorAll("[data-estatistica]")
+const roboImg = document.querySelector("[data-robo]")
 
 const pecas = {
     "bracos": {
@@ -60,4 +61,17 @@ function atualizaEstatisticas (peca) {
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
     })
 }
+
+roboImg.addEventListener("click", (evento) => {
+
+   let corAtual = evento.target.src.split("img");
+   
+   let novaCor = robotron.indexOf("img"+corAtual[1]) === 5 ? 0 : robotron.indexOf("img"+corAtual[1]) + 1
+
+   evento.target.src = robotron.at(novaCor) 
+})
+
+const robotron = ["img/robotron.png","img/Robotron-Branco.png","img/Robotron-Amarelo.png", "img/Robotron-Preto.png", 
+    "img/Robotron-Rosa.png","img/Robotron-Vermelho.png"]
+
 
